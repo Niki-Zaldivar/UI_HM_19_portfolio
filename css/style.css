@@ -1,20 +1,30 @@
 .topnav {vertical-align: top;
-    text-align: right;
+    text-align: center;
     color: #ffffff;
-    width: auto;
+    width: 80%;
     height: 28px;
-    margin: 15px;
+    margin-top: 35px;
     padding: 1.2%;
     background-color: #004D4E;
     font-size: 22px;
+    font-weight: 500;
     float: right;
-    align-content: center;
-    justify-content: center;}
+    align-items: right;
+    justify-content: flex-end;}
+
     
-    .header {height: 60px;
+.header {height: 60px;
             width: 50px;}
+
+.headerNav {
+    display: inline-block;
+    background-color: #f2f2f2;
+    opacity: .70;
+    height: 140px;
+    width: 100%;
+}
     
-    .topnav a {
+.topnav a {
         color: #ffffff;
         text-align: center;
         padding: 10px 16px;
@@ -26,46 +36,43 @@
         justify-content: space-around;
       }
     
-    .topnav a:hover {
+.topnav a:hover {
         background-color: #E53D14;
         color: #ffffff;
-        height: 30px;
+        height: 50px;
       }
     
-    .logo {
+.logo {
         height: 150px;
         width: 150px;
 }
-    
-  
-.parentContainer {
-    display: flex;
-    margin: 10px;
-    color: white;
-opacity: 0.85;
-background-color: #E53D14;
-justify-content: flex-start;}
 
-.flexChild {
-    
-    padding:10px;
-    margin: 10px;
-    height: 200px;
-    
+body, html {
+    height: 100%;
 }
 
-.about {
-    margin-top:20px;
-    margin-bottom: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../images/portfolio.jpg");
-    background-size: cover;
-    height: 600px;
-    width: 1000px;
-    justify-content: center;
-    align-items: center;
-     }
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/portfoliocropped.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  color: white;
+}
+
+.resume {
+    margin-top: 40%;
+}
+    
 
 
 /* arrow */
@@ -77,7 +84,7 @@ a { color: white; text-decoration: none; }
 
 .arrow {
   text-align: center;
-  margin: 1% 0;
+  margin: -10% 0;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -98,43 +105,26 @@ a { color: white; text-decoration: none; }
 }
 
 /* end arrow */
+
+.mySkills {
+    margin-top: 20%;
+}
     
-     .column, .about, .parentContainer, .flexChild { 
-        color: white;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-    
-    }
-    
-      .column {
-        display: flex;
-        height: 500px;
-        width: 800px;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    
-    .heroImg {position: center;
-        width: 100%;
-        height: 300px;
-        margin-top: 30px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-        margin-bottom: 30px;}
-        
-    
-    .button {
+.button {
         align-items: center;
         justify-content: center;
-        background-color: #004D4E;
-        height: 30px;
-        width: 170px;
+        position: absolute;
+        background-color: #E53D14;
+        height: auto;
+        width: auto;
         color: #ffffff;
-        font-size: 16px;
+        font-size: 20px;
+        font-family: inherit;
         margin-bottom: 20px;
-        margin: auto;
-        padding: auto;
+        margin-top: 20px;
+        margin: 30px;
+        padding: 15px;
+        border-radius: 20%;
     }
 
     #myHeading {
@@ -209,6 +199,10 @@ a { color: white; text-decoration: none; }
         height: 360px;
         border-radius: 50%;
         margin: 20px;
+        background-image: url("../images/UX-img.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .photographyFlexchild {
@@ -221,6 +215,10 @@ a { color: white; text-decoration: none; }
         height: 360px;
         border-radius: 50%;
         margin: 20px;
+        background-image: url("../images/Steady\ Common.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
        
     }
 
