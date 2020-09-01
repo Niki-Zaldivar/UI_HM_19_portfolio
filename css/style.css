@@ -250,7 +250,33 @@ a { color: white; text-decoration: none; }
         background-repeat: no-repeat;
        
     }
-   
+    .aboutArtist{
+        max-width: 1200px;
+        height: 700px;
+        text-align: center;
+    }
+
+    .artist {
+        font-family: fantasy;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .artistInfo {
+        background-position: center;
+        background-image: url("../images/AboutArtist.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90%;
+        position: relative;
+        height: 700px;
+        transform: translateY(-115px);
+    }
+
+    .workGrid {
+        transform: translateY(-215px);
+    }
+
 
     #myworkGrid {
         margin: 0px 5%;
@@ -323,63 +349,340 @@ a { color: white; text-decoration: none; }
         background-attachment: fixed; 
     }
 
-    @media only screen and (max-width: 600px) {
-        
+ /* MEDIA QUERIES */
 
-        #myworkGrid {
-            margin: 0px 5%;
-            display: grid;
-            grid-template-rows: 150px 150px 150px;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-areas:
-            "lifelineProject" 
-            "pantryProject" 
-            "kidzmappzProject"
-          }
+
+@media screen and (max-width: 480px) {
+    .topnav {vertical-align: top;
+        text-align: center;
+        color: #ffffff;
+        width: 80%;
+        height: 28px;
+        margin-top: 35px;
+        padding: 1.2%;
+        background-color: #004D4E;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        float: right;
+        align-items: right;
+        justify-content: space-between;}
     
-          .flexContainer {
+    .navigation {
+        margin: 0 0 15px 0;
+    }    
+
+    .header {height: 60px;
+                width: 50px;}
+    
+    .headerNav {
+        display: inline-block;
+        background-color: #f2f2f2;
+        opacity: .70;
+        height: 60px;
+        width: 100%;
+    }
+        
+    .topnav a {
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            background-color: #004D4E;
+            height: relative;
+            width: 0 auto;
+            justify-content: space-around;
+          }
+        
+    .topnav a:hover {
+            background-color: #E53D14;
+            color: #ffffff;
+            height: 50px;
+          }
+        
+    .logo {
+            height: 75px;
+            width: 75px;
+    }
+    
+    body, html {
+        height: 100%;
+    }
+    
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/portfoliocropped.jpg");
+      height: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    
+    #headText {
+        font-family: fantasy;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .bodyText {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+    
+    .hero-text {
+      text-align: left;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-80%, -50%);
+      color: white;
+    }
+    
+    .resume {
+        margin-top: 40%;
+    }
+        
+    
+    
+    /* arrow */
+    @bg: #2d2d37; // Dark blue
+    @primary: #fd6b21; // Orange
+    
+    body { background: @bg;}
+    a { color: white; text-decoration: none; }
+    
+    .arrow {
+      text-align: center;
+      margin: -10% 0;
+    }
+    .bounce {
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+    
+    /* end arrow */
+    
+    .mySkills {
+        margin-top: 20%;
+    }
+        
+    .button {
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            background-color: #E53D14;
+            height: auto;
+            width: auto;
+            color: #ffffff;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin: 15px;
+            padding: 7px;
+            border-radius: 20%;
+        }
+    
+        #myHeading {
+            text-align: center;
+            font-size: 60px;
+            font-family: fantasy;
+        }
+    
+        .heading {
+            font-size: 30px;
+            color: white;
+            font-family: fantasy;
+            text-align: center;
+            padding-top: 5px;
+        }
+    
+    .backgroundText {
+        background-color: #004D4E;
+        height: 30px;
+        width: 200px;
+        bottom: -130px;
+        position: relative;
+        z-index: -7;
+        padding: 4px;
+        border-radius: 10%;
+    
+    }
+    .textBackground {
+        background-color: #E53D14;
+        height: 50px;
+        width: 140px;
+        bottom: -140px;
+        position: relative;
+        z-index: -7;
+        border-radius: 20%;
+        padding: 10px;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headSkills {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: fantasy;
+    
+    }
+    
+    
+        .flexContainer {
             display: flex;
             justify-content: center;
             align-items: center;
             align-content: center;
             background-color: #676464;
-            opacity: 0.75;
-            width: auto;
-            height: auto;
+            opacity: 0.85;
+            width: 100%;
+            height: 250px;
             margin: auto;
-            border-radius: 15%;}
-
-            .uxuiFlexchild {
-                width: 100%;
-                justify-content:  center;
-                align-items: center;
-                background-color: #C5E870;
-                text-align: center;
-                opacity: 0.75;
-                height: auto;
-                border-radius: 60%;
-            }
-        
-            .photographyFlexchild {
-                width: 100%;
-                justify-content:  center;
-                align-items: center;
-                background-color:#ffffff;
-                text-align: center;
-                opacity: 0.75;
-                height: auto;
-                border-radius: 60%;
-            }
-        
-            .designFlexchild {
-                width: 100%;
-                justify-content:  center;
-                align-items: center;
-                background-color:#C5E870;
-                text-align: center;
-                opacity: 0.75;
-                height: auto;
-                border-radius: 60%;
-            }
-
+            border-radius: 15%;
+    
         }
+    
+        .uxuiFlexchild {
+            width: 100%;
+            justify-content:  center;
+            align-items: center;
+            background-color: #C5E870;
+            text-align: center;
+            opacity: 0.75;
+            height: 300px;
+            border-radius: 50%;
+            margin: 15px;
+            background-image: url("../images/UX-img.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    
+        .photographyFlexchild {
+            width: 100%;
+            justify-content:  center;
+            align-items: center;
+            background-color:#ffffff;
+            text-align: center;
+            opacity: 0.75;
+            height: 300px;
+            border-radius: 50%;
+            margin: 15px;
+            background-image: url("../images/Steady\ Common.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+           
+        }
+    
+        .designFlexchild {
+            width: 100%;
+            justify-content:  center;
+            align-items: center;
+            background-color:#C5E870;
+            text-align: center;
+            opacity: 0.75;
+            height: 300px;
+            border-radius: 50%;
+            margin: 15px;
+            background-image: url("../images/design\ art.jpg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+           
+        }
+       
+    
+        #myworkGrid {
+            margin: 0px 5%;
+            display: grid;
+            grid-template-rows: 300px;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "lifelineProject" 
+            "pantryProject" 
+            "kidzmappzProject";
+          }
+    
+        #lifelineProject {
+            grid-area: lifelineProject;
+            background-image: url("../images/Lifeline.png");
+            background-size: contain;
+            width: 350px;
+            height: 195px;
+            border-radius: 10%;
+        }
+    
+        #pantryProject {
+            grid-area: pantryProject;
+            background-image: url("../images/pantry.png");
+            background-size: contain;
+            width: 350px;
+            height: 195px;
+            border-radius: 10%;
+        }
+    
+        #kidzmappzProject {
+            grid-area: kidzmappzProject;
+            background-image: url("../images/Kidzmappz.png");
+            background-size: contain;
+            width: 350px;
+            height: 195px;    
+            border-radius: 10%;
+        }
+    
+        .workGrid {
+            display: grid;
+        }
+        
+        .linkMore {
+            margin-top: 150px;
+    
+        }
+        
+        footer {
+            background-color: #C5E870;
+            padding-inline-end: 30px;
+            vertical-align: bottom;
+            text-align: center;
+            color: #ffffff;
+            width: 100%;
+            height: 30px;
+            font-size: 22px;
+            position: center;}
+
+        .footNav {
+            text-align: center;
+        }
+        
+        footer a {
+            color: #ffffff;
+            padding: 20px;}
+        
+        .background-image {width: 100%;
+            height: 100%;
+            position: relative;
+            background-position: fixed;
+        }
+        
+        html {background-image: url("../images/IMG_0532.PNG");
+            background-attachment: fixed; 
+        }
+}
