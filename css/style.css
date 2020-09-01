@@ -8,9 +8,10 @@
     background-color: #004D4E;
     font-size: 22px;
     font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: right;
     align-items: right;
-    justify-content: flex-end;}
+    justify-content: space-between;}
 
     
 .header {height: 60px;
@@ -58,6 +59,17 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+#headText {
+    font-family: fantasy;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.bodyText {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 
 .hero-text {
@@ -119,7 +131,7 @@ a { color: white; text-decoration: none; }
         width: auto;
         color: #ffffff;
         font-size: 20px;
-        font-family: inherit;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-bottom: 20px;
         margin-top: 20px;
         margin: 30px;
@@ -181,7 +193,7 @@ a { color: white; text-decoration: none; }
         align-items: center;
         align-content: center;
         background-color: #676464;
-        opacity: 0.75;
+        opacity: 0.85;
         width: 1200px;
         height: 500px;
         margin: auto;
@@ -238,6 +250,7 @@ a { color: white; text-decoration: none; }
         background-repeat: no-repeat;
        
     }
+   
 
     #myworkGrid {
         margin: 0px 5%;
@@ -277,6 +290,12 @@ a { color: white; text-decoration: none; }
 
     .workGrid {
         display: grid;
+    }
+    
+    .linkMore {
+
+        margin-top: 150px;
+
     }
     
     footer {
