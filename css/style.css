@@ -1,19 +1,65 @@
 .topnav {vertical-align: top;
+    display: flex;
     text-align: center;
     color: #ffffff;
     width: 80%;
-    height: 28px;
-    margin-top: 35px;
-    padding: 1.2%;
+    height: 43px;
+    margin-top: 53px;
     background-color: #004D4E;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     float: right;
-    align-items: right;
-    justify-content: space-between;}
+    justify-content: space-between;
+   }
+   @media screen and (max-width: 600px) {
+       .topnav{
+    display:none
+       }
 
+       .logo {
+           height: 30%;
+           width: 30%;
+       }
+
+       #headText {
+        font-family: fantasy;
+        font-size: 40px;
+        font-weight: 500;}
+
+        .h1 {font-size: 35px;}
+
+        .photographyFlexchild {
+            height: 50%;
+        }
+        .designFlexchild{
+            height: 50%;
+        }
+        #myworkGrid {
+            margin: 0px 5%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "lifelineProject"
+             "pantryProject" 
+             "kidzmappzProject";
+          }
+          .toggle {
+            display: block;
+            align-content: right;
+            float:right;
+            margin-top: 15px;
+            transform: translateX(500%);
+        }
+}
+
+@media screen and (min-width: 600px){
+    .toggle {
+        display:none
+    }
+}
     
+
 .header {height: 60px;
             width: 50px;}
 
@@ -21,10 +67,23 @@
     display: inline-block;
     background-color: #f2f2f2;
     opacity: .70;
-    height: 140px;
     width: 100%;
 }
-    
+
+nav{
+    display: inline-block;
+}
+
+.navigation{
+    display: inline-block;
+}
+
+.navItem {
+font-size: 18px;
+}
+
+
+
 .topnav a {
         color: #ffffff;
         text-align: center;
@@ -40,12 +99,12 @@
 .topnav a:hover {
         background-color: #E53D14;
         color: #ffffff;
-        height: 50px;
+
       }
     
 .logo {
-        height: 150px;
-        width: 150px;
+        height: 20%;
+        width: 20%;
 }
 
 body, html {
@@ -55,7 +114,7 @@ body, html {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/portfoliocropped.jpg");
   height: 80%;
-  background-position: center;
+  background-position: 83%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -63,22 +122,27 @@ body, html {
 
 #headText {
     font-family: fantasy;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
+    margin-top: 45px;
+}
+
+.herotextBack{
+    margin-left: 50px;
+    margin-top: 40px;
 }
 
 .bodyText {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    margin-top: -15px;
 }
 
 .hero-text {
   text-align: left;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-80%, -50%);
+  position: relative;
   color: white;
+  width: 50%;
 }
 
 .resume {
@@ -130,18 +194,18 @@ a { color: white; text-decoration: none; }
         height: auto;
         width: auto;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 16px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        margin: 30px;
-        padding: 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin: 20px;
+        padding: 10px;
         border-radius: 20%;
     }
 
     #myHeading {
         text-align: center;
-        font-size: 60px;
+        font-size: 50px;
         font-family: fantasy;
     }
 
@@ -166,13 +230,12 @@ a { color: white; text-decoration: none; }
 }
 .textBackground {
     background-color: #E53D14;
-    height: 80px;
-    width: 200px;
+    height: 14%;
+    width: 75%;
     bottom: -280px;
     position: relative;
-    z-index: -7;
     border-radius: 20%;
-    padding: 10px;
+    padding: 6px;
     color: white;
     justify-content: center;
     align-items: center;
@@ -181,7 +244,7 @@ a { color: white; text-decoration: none; }
 .headSkills {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 18px;
     font-family: fantasy;
 
 }
@@ -194,8 +257,8 @@ a { color: white; text-decoration: none; }
         align-content: center;
         background-color: #676464;
         opacity: 0.85;
-        width: 1200px;
-        height: 500px;
+        width: 100%;
+        height: 100%;
         margin: auto;
         border-radius: 15%;
 
@@ -208,13 +271,14 @@ a { color: white; text-decoration: none; }
         background-color: #C5E870;
         text-align: center;
         opacity: 0.75;
-        height: 360px;
-        border-radius: 50%;
+        height: 360px;       
+         border-radius: 50%;
         margin: 20px;
         background-image: url("../images/UX-img.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        flex: 1;
     }
 
     .photographyFlexchild {
@@ -224,13 +288,14 @@ a { color: white; text-decoration: none; }
         background-color:#ffffff;
         text-align: center;
         opacity: 0.75;
-        height: 360px;
-        border-radius: 50%;
+        height: 360px;       
+         border-radius: 50%;
         margin: 20px;
         background-image: url("../images/Steady\ Common.png");
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        flex: 1;
        
     }
 
@@ -248,6 +313,7 @@ a { color: white; text-decoration: none; }
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        flex: 1;
        
     }
     .aboutArtist{
@@ -269,7 +335,7 @@ a { color: white; text-decoration: none; }
         background-repeat: no-repeat;
         background-size: 90%;
         position: relative;
-        height: 700px;
+        height: 497px;
         transform: translateY(-115px);
     }
 
@@ -291,8 +357,6 @@ a { color: white; text-decoration: none; }
         grid-area: lifelineProject;
         background-image: url("../images/Lifeline.png");
         background-size: contain;
-        width: 350px;
-        height: 195px;
         border-radius: 10%;
     }
 
@@ -300,17 +364,13 @@ a { color: white; text-decoration: none; }
         grid-area: pantryProject;
         background-image: url("../images/pantry.png");
         background-size: contain;
-        width: 350px;
-        height: 195px;
         border-radius: 10%;
     }
 
     #kidzmappzProject {
         grid-area: kidzmappzProject;
         background-image: url("../images/Kidzmappz.png");
-        background-size: contain;
-        width: 350px;
-        height: 195px;    
+        background-size: contain;  
         border-radius: 10%;
     }
 
@@ -349,340 +409,3 @@ a { color: white; text-decoration: none; }
         background-attachment: fixed; 
     }
 
- /* MEDIA QUERIES */
-
-
-@media screen and (max-width: 480px) {
-    .topnav {vertical-align: top;
-        text-align: center;
-        color: #ffffff;
-        width: 80%;
-        height: 28px;
-        margin-top: 35px;
-        padding: 1.2%;
-        background-color: #004D4E;
-        font-size: 18px;
-        font-weight: 500;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        float: right;
-        align-items: right;
-        justify-content: space-between;}
-    
-    .navigation {
-        margin: 0 0 15px 0;
-    }    
-
-    .header {height: 60px;
-                width: 50px;}
-    
-    .headerNav {
-        display: inline-block;
-        background-color: #f2f2f2;
-        opacity: .70;
-        height: 60px;
-        width: 100%;
-    }
-        
-    .topnav a {
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 16px;
-            text-decoration: none;
-            font-size: 20px;
-            background-color: #004D4E;
-            height: relative;
-            width: 0 auto;
-            justify-content: space-around;
-          }
-        
-    .topnav a:hover {
-            background-color: #E53D14;
-            color: #ffffff;
-            height: 50px;
-          }
-        
-    .logo {
-            height: 75px;
-            width: 75px;
-    }
-    
-    body, html {
-        height: 100%;
-    }
-    
-    .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/portfoliocropped.jpg");
-      height: 80%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }
-    
-    #headText {
-        font-family: fantasy;
-        font-size: 30px;
-        font-weight: 500;
-    }
-    
-    .bodyText {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 16px;
-    }
-    
-    .hero-text {
-      text-align: left;
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      transform: translate(-80%, -50%);
-      color: white;
-    }
-    
-    .resume {
-        margin-top: 40%;
-    }
-        
-    
-    
-    /* arrow */
-    @bg: #2d2d37; // Dark blue
-    @primary: #fd6b21; // Orange
-    
-    body { background: @bg;}
-    a { color: white; text-decoration: none; }
-    
-    .arrow {
-      text-align: center;
-      margin: -10% 0;
-    }
-    .bounce {
-      -moz-animation: bounce 2s infinite;
-      -webkit-animation: bounce 2s infinite;
-      animation: bounce 2s infinite;
-    }
-    
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-10px);
-      }
-      60% {
-        transform: translateY(-5px);
-      }
-    }
-    
-    /* end arrow */
-    
-    .mySkills {
-        margin-top: 20%;
-    }
-        
-    .button {
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            background-color: #E53D14;
-            height: auto;
-            width: auto;
-            color: #ffffff;
-            font-size: 18px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-bottom: 10px;
-            margin-top: 10px;
-            margin: 15px;
-            padding: 7px;
-            border-radius: 20%;
-        }
-    
-        #myHeading {
-            text-align: center;
-            font-size: 60px;
-            font-family: fantasy;
-        }
-    
-        .heading {
-            font-size: 30px;
-            color: white;
-            font-family: fantasy;
-            text-align: center;
-            padding-top: 5px;
-        }
-    
-    .backgroundText {
-        background-color: #004D4E;
-        height: 30px;
-        width: 200px;
-        bottom: -130px;
-        position: relative;
-        z-index: -7;
-        padding: 4px;
-        border-radius: 10%;
-    
-    }
-    .textBackground {
-        background-color: #E53D14;
-        height: 50px;
-        width: 140px;
-        bottom: -140px;
-        position: relative;
-        z-index: -7;
-        border-radius: 20%;
-        padding: 10px;
-        color: white;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .headSkills {
-        color: white;
-        text-align: center;
-        font-size: 30px;
-        font-family: fantasy;
-    
-    }
-    
-    
-        .flexContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            background-color: #676464;
-            opacity: 0.85;
-            width: 100%;
-            height: 250px;
-            margin: auto;
-            border-radius: 15%;
-    
-        }
-    
-        .uxuiFlexchild {
-            width: 100%;
-            justify-content:  center;
-            align-items: center;
-            background-color: #C5E870;
-            text-align: center;
-            opacity: 0.75;
-            height: 300px;
-            border-radius: 50%;
-            margin: 15px;
-            background-image: url("../images/UX-img.png");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    
-        .photographyFlexchild {
-            width: 100%;
-            justify-content:  center;
-            align-items: center;
-            background-color:#ffffff;
-            text-align: center;
-            opacity: 0.75;
-            height: 300px;
-            border-radius: 50%;
-            margin: 15px;
-            background-image: url("../images/Steady\ Common.png");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-           
-        }
-    
-        .designFlexchild {
-            width: 100%;
-            justify-content:  center;
-            align-items: center;
-            background-color:#C5E870;
-            text-align: center;
-            opacity: 0.75;
-            height: 300px;
-            border-radius: 50%;
-            margin: 15px;
-            background-image: url("../images/design\ art.jpg");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-           
-        }
-       
-    
-        #myworkGrid {
-            margin: 0px 5%;
-            display: grid;
-            grid-template-rows: 300px;
-            grid-template-columns: 1fr;
-            grid-template-areas: 
-            "lifelineProject" 
-            "pantryProject" 
-            "kidzmappzProject";
-          }
-    
-        #lifelineProject {
-            grid-area: lifelineProject;
-            background-image: url("../images/Lifeline.png");
-            background-size: contain;
-            width: 350px;
-            height: 195px;
-            border-radius: 10%;
-        }
-    
-        #pantryProject {
-            grid-area: pantryProject;
-            background-image: url("../images/pantry.png");
-            background-size: contain;
-            width: 350px;
-            height: 195px;
-            border-radius: 10%;
-        }
-    
-        #kidzmappzProject {
-            grid-area: kidzmappzProject;
-            background-image: url("../images/Kidzmappz.png");
-            background-size: contain;
-            width: 350px;
-            height: 195px;    
-            border-radius: 10%;
-        }
-    
-        .workGrid {
-            display: grid;
-        }
-        
-        .linkMore {
-            margin-top: 150px;
-    
-        }
-        
-        footer {
-            background-color: #C5E870;
-            padding-inline-end: 30px;
-            vertical-align: bottom;
-            text-align: center;
-            color: #ffffff;
-            width: 100%;
-            height: 30px;
-            font-size: 22px;
-            position: center;}
-
-        .footNav {
-            text-align: center;
-        }
-        
-        footer a {
-            color: #ffffff;
-            padding: 20px;}
-        
-        .background-image {width: 100%;
-            height: 100%;
-            position: relative;
-            background-position: fixed;
-        }
-        
-        html {background-image: url("../images/IMG_0532.PNG");
-            background-attachment: fixed; 
-        }
-}
