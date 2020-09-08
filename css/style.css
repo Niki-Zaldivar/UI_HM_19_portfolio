@@ -12,59 +12,7 @@
     float: right;
     justify-content: space-between;
    }
-   @media screen and (max-width: 600px) {
-       .topnav{
-    display:none
-       }
 
-       .logo {
-           height: 30%;
-           width: 30%;
-       }
-
-       #headText {
-        font-family: fantasy;
-        font-size: 40px;
-        font-weight: 500;}
-
-        .h1 {font-size: 35px;}
-
-        .photographyFlexchild {
-            height: 250px;
-        }
-        .designFlexchild{
-            height: 250px
-        }
-
-        .uxuiFlexchild {
-            height: 250px;
-        }
-
-        #myworkGrid {
-            margin: 0px 5%;
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 300px 300px 300px;
-            grid-template-areas: 
-            "lifelineProject"
-             "pantryProject" 
-             "kidzmappzProject";
-          }
-          
-          .toggle {
-            display: block;
-            align-content: right;
-            float:right;
-            margin-top: 15px;
-            transform: translateX(500%);
-        }
-}
-
-@media screen and (min-width: 600px){
-    .toggle {
-        display:none
-    }
-}
     
 
 .header {height: 60px;
@@ -433,3 +381,56 @@ a { color: white; text-decoration: none; }
         background-attachment: fixed; 
     }
 
+    @media screen and (max-width: 600px) {
+        .topnav{
+     display:none
+        }
+ 
+        .logo {
+            height: 30%;
+            width: 30%;
+        }
+ 
+        #headText {
+         font-family: fantasy;
+         font-size: 40px;
+         font-weight: 500;}
+ 
+         .h1 {font-size: 35px;}
+ 
+         .photographyFlexchild {
+             height: 250px;
+         }
+         .designFlexchild{
+             height: 250px
+         }
+ 
+         .uxuiFlexchild {
+             height: 250px;
+         }
+ 
+         #myworkGrid {
+             margin: 0px 5%;
+             display: grid;
+             grid-template-rows: 1fr 1fr 1fr;
+             grid-template-columns: 300px 300px 300px;
+             grid-template-areas: 
+             "lifelineProject"
+              "pantryProject" 
+              "kidzmappzProject";
+           }
+           
+           .toggle {
+             display: block;
+             align-content: right;
+             float:right;
+             margin-top: 15px;
+             transform: translateX(500%);
+         }
+ }
+ 
+ @media screen and (min-width: 600px){
+     .toggle {
+         display:none
+     }
+ }
