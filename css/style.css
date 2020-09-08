@@ -30,20 +30,27 @@
         .h1 {font-size: 35px;}
 
         .photographyFlexchild {
-            height: 50%;
+            height: 250px;
         }
         .designFlexchild{
-            height: 50%;
+            height: 250px
         }
+
+        .uxuiFlexchild {
+            height: 250px;
+        }
+
         #myworkGrid {
             margin: 0px 5%;
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 300px 300px 300px;
             grid-template-areas: 
             "lifelineProject"
              "pantryProject" 
              "kidzmappzProject";
           }
+          
           .toggle {
             display: block;
             align-content: right;
@@ -266,13 +273,14 @@ a { color: white; text-decoration: none; }
 
     .uxuiFlexchild {
         width: 33%;
+        max-width: 360px;
         justify-content:  center;
         align-items: center;
         background-color: #C5E870;
         text-align: center;
         opacity: 0.75;
         height: 360px;       
-         border-radius: 50%;
+        border-radius: 50%;
         margin: 20px;
         background-image: url("../images/UX-img.png");
         background-size: contain;
@@ -283,6 +291,7 @@ a { color: white; text-decoration: none; }
 
     .photographyFlexchild {
         width: 33%;
+        max-width: 360px;
         justify-content:  center;
         align-items: center;
         background-color:#ffffff;
@@ -301,6 +310,7 @@ a { color: white; text-decoration: none; }
 
     .designFlexchild {
         width: 33%;
+        max-width: 360px;
         justify-content:  center;
         align-items: center;
         background-color:#C5E870;
@@ -318,7 +328,7 @@ a { color: white; text-decoration: none; }
     }
     .aboutArtist{
         max-width: 1200px;
-        height: 700px;
+        height: 600px;
         text-align: center;
     }
 
@@ -326,6 +336,8 @@ a { color: white; text-decoration: none; }
         font-family: fantasy;
         font-size: 60px;
         text-align: center;
+        margin-bottom: 8%;
+        margin-top: 20px;
     }
 
     .artistInfo {
@@ -357,22 +369,34 @@ a { color: white; text-decoration: none; }
         grid-area: lifelineProject;
         background-image: url("../images/Lifeline.png");
         background-size: contain;
-        border-radius: 10%;
+        background-repeat: no-repeat;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     #pantryProject {
         grid-area: pantryProject;
         background-image: url("../images/pantry.png");
         background-size: contain;
-        border-radius: 10%;
-    }
+        background-repeat: no-repeat;
+        padding-left: 5px;
+        padding-right: 5px;  
+        margin-left: 5px;
+        margin-right: 5px;
+      }
 
     #kidzmappzProject {
         grid-area: kidzmappzProject;
         background-image: url("../images/Kidzmappz.png");
-        background-size: contain;  
-        border-radius: 10%;
-    }
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        padding-left: 5px;
+        padding-right: 5px;  
+        margin-left: 5px;
+        margin-right: 5px;
+      }
 
     .workGrid {
         display: grid;
