@@ -13,7 +13,12 @@
     justify-content: space-between;
    }
 
-    
+   @media screen and (min-width: 600px){
+    .toggle {
+        display:none
+    }
+}
+
 
 .header {height: 60px;
             width: 50px;}
@@ -429,8 +434,3 @@ a { color: white; text-decoration: none; }
          }
  }
  
- @media screen and (min-width: 600px){
-     .toggle {
-         display:none
-     }
- }
